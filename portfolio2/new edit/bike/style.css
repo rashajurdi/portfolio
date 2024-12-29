@@ -1,0 +1,18 @@
+body {
+    background-image: url(straight-empty-road-through-countryside-260nw-1523000288.webp);
+}
+img {
+    width: 100px;
+    margin-top: 140px;
+    animation-name: drive;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes drive {
+    from{transform: translateX(0px);}
+    to{transform: translateX(700px);}
+}

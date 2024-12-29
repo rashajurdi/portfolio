@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Burger Factory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="contact-page">
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Contact Us</h1>
+    </header>
+
+    <!-- Main content for contact section -->
+    <main>
+        <section class="contact-info">
+            <p>Feel free to reach out to us for any questions or feedback. We're here to help!</p>
+        </section>
+
+        <section>
+            <form id="contact-form" action="submit_contact_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 The Burger Factory. All rights reserved.</p>
+    </footer>
+</body>
+</html>

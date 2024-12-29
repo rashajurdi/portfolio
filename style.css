@@ -1,0 +1,366 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.nav-link {
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: black;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.main {
+    background: url(Untitled\ design.jpg);
+    background-size: cover;
+    background-position: left center; /* Moves the background image to the left */
+    width: 100%;
+    height: 410px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: flex-start; /* Align content to the left */
+    padding-left: 2rem; /* Add spacing for the text */
+    margin-bottom: 30px;
+}
+
+.main h3 {
+    font-size: 4.4rem; 
+    font-weight: 700;
+}
+
+.main h3 small{
+    font-size: 2.4rem; 
+    font-weight: normal;
+}
+
+.main h6 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    border-bottom: 2px solid rgb(233, 20, 109);
+    width: 40%;
+}
+.main .bt1 {
+    height: 55px;
+    width: 138px;
+    background-color: rgb(233, 20, 109);
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.main .bt1:hover{
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+    color: rgb(233, 20, 109);
+    border: 1px solid rgb(233, 20, 109);
+}
+.main .bt2 {
+    height: 55px;
+    width: 138px;
+    background-color: transparent;
+    color: rgb(233, 20, 109);
+    outline: none;
+    border: 1px solid rgb(233, 20, 109);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.main .bt2:hover{
+    background-color: rgb(233, 20, 109);
+    transition: 0.5s;
+    color: white;
+}
+.font-weight-bold {
+    font-weight: bold;
+    color: rgb(233, 20, 109); 
+    font-size: 1.2rem; 
+}
+.about img {
+    -webkit-box-shadow: 6px 4px 41px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 4px 41px -24px rgba(0,0,0,0.75);
+    box-shadow: 6px 4px 41px -24px rgba(0,0,0,0.75);
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;   
+}
+.progress {
+    background-color: rgb(223, 219, 219);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+    -webkit-box-shadow: inset 23px 40px 97px -159px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 23px 40px 97px -159px rgba(0,0,0,0.75);
+    box-shadow: inset 23px 40px 97px -159px rgba(0,0,0,0.75);
+
+}
+.pro-value1 {
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 40px;
+    width: 0;
+}
+.progress p{
+    color: white;
+    padding: 12px;
+    
+}
+.pro-value2 {
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 40px;
+    width: 0;
+}
+.pro-value3 {
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 40px;
+    width: 0;
+}
+.pro-value4 {
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 40px;
+    width: 0;
+}
+@keyframes load1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 95%;
+    }
+}
+@keyframes load2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+@keyframes load3 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 65%;
+    }
+}
+@keyframes load4 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 98%;
+    }
+}
+/* Buttons Styling */
+.main .bt1, .main .bt2 {
+    height: 55px;
+    width: 138px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    line-height: 55px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.main .bt1 {
+    background-color: rgb(233, 20, 109);
+    color: white;
+    border: none;
+}
+
+.main .bt1:hover {
+    background-color: white;
+    color: rgb(233, 20, 109);
+    border: 1px solid rgb(233, 20, 109);
+}
+
+.main .bt2 {
+    background-color: transparent;
+    color: rgb(233, 20, 109);
+    border: 1px solid rgb(233, 20, 109);
+}
+
+.main .bt2:hover {
+    background-color: rgb(233, 20, 109);
+    color: white;
+    border: none;
+}
+.bt3 {
+    background-color: rgb(233, 20, 109); /* Hot Pink */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.bt3:hover {
+    background-color: rgb(154, 0, 64); /* Darker pink */
+}
+
+.card {
+    border: none;
+    outline: none;
+    -webkit-box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+    box-shadow: -8px 6px 89px -65px rgba(0,0,0,0.75);
+}
+.card p {
+    color: gray;
+}
+.circle {
+    height: 70px;
+    width: 70px;
+    background-color: rgb(154, 154, 154);
+    color: black;
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.card:hover .circle {
+    background-color: transparent;
+    color: white;
+    transition: 0.5s;
+}
+/* Projects Container */
+#projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .projects-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Grid Layout */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Card Styling */
+  .project-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Card Header */
+  .project-header {
+    background-color: rgb(233, 20, 109);
+    color: white;
+    padding: 10px;
+  }
+  
+  .project-heading {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  /* Card Body */
+  .project-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #555;
+    flex-grow: 1;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styling */
+  .project-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(233, 20, 109);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-button:hover {
+    background-color: rgb(154, 0, 64);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .projects-title {
+      font-size: 1.5rem;
+    }
+  }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Guide to Lebanon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div id="preloader"></div>
+    <nav>
+        <ul id="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="artist.html">Artist</a></li>
+            <li><a href="famousfood.html">Food</a></li>
+            <li><a href="placestovisit.html">Place</a></li>
+        </ul>
+    </nav>
+    <!-- Welcome Section -->
+    <div class="header">
+        <h1>Welcome to Lebanon</h1>
+        <p>Discover the beauty, culture, and history of Lebanon!</p>
+    </div>
+    <!-- Maps Section -->
+    <div class="content" id="maps">
+        <h2>Maps</h2>
+        <p>Find your way around Lebanon with our interactive map!</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1696203.663807979!2d34.52778742190334!3d33.86652513465848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f17028422aaad%3A0xcc7d34096c00f970!2sLebanon!5e0!3m2!1sen!2slb!4v1730907197640!5m2!1sen!2slb" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="map-placeholder">Interactive Map</div>
+        </a>    
+    </div>
+
+    <script>
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function(){
+
+            loader.style.display = "none";
+        })
+    </script>
+</body>
+</html>

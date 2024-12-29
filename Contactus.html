@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            color: #343a40;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .circle {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: rgb(233, 20, 109);
+        }
+
+        .circle span img {
+            filter: invert(1);
+        }
+
+        h5 {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .form-control {
+            border-radius: 5px;
+            border: 1px solid #ced4da;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            border-color: rgb(233, 20, 109);
+        }
+
+        .btn3 {
+            background-color: rgb(233, 20, 109);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn3:hover {
+            background-color: rgb(154, 0, 64);
+        }
+
+        .contact {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact .text-center p {
+            margin: 0;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <section class="contact py-5">
+        <div class="container py-5">
+            <h1 class="text-center">Contact Us</h1>
+            <div class="row py-5">
+                <div class="col-lg-10 mx-auto">
+                    <div class="row text-center">
+                        <div class="col-lg-4">
+                            <div class="circle" data-aos="fade-up">
+                                <span><img src="geo-alt.svg" alt="Address" style="width: 30px;"></span>
+                            </div>
+                            <h5>Address</h5>
+                            <p>House No # 444 Lahore Pakistan</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="circle" data-aos="fade-up" data-aos-delay="100">
+                                <span><img src="envelope.svg" alt="Email" style="width: 30px;"></span>
+                            </div>
+                            <h5>Email</h5>
+                            <p>info@example.com</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="circle" data-aos="fade-up" data-aos-delay="200">
+                                <span><img src="telephone.svg" alt="Phone" style="width: 30px;"></span>
+                            </div>
+                            <h5>Phone</h5>
+                            <p>+92 123 456 7890</p>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-lg-9 mx-auto">
+                            <form action="" data-aos="fade-up">
+                                <div class="row mb-3">
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-control bg-light" placeholder="Full Name">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="email" class="form-control bg-light" placeholder="Email Address">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-lg-12">
+                                        <textarea class="form-control bg-light" rows="5" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <button class="btn3 w-100">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 200
+        });
+    </script>
+</body>
+</html>

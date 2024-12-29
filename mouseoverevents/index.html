@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Moue Over Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 onmouseover="onmouse(this)" onmouseout="outmouse(this)">Mouse Over Me<span onclick="showAlert()">Alert</span> to see a message</h1>
+    <div onmousemove="myMoveFunction()">
+        <p>onmousemove</p>
+        <p id="demo1">Mouse Over Me!</p>
+    </div>
+    <div onmouseover="onmouse1(this)" onmouseout="outmouse2(this)">
+        <p>onmouseenter</p>
+        <p id="demo2">Mouse Over Me!</p>
+    </div>
+    <div onmouseover="onmouseover1(this)" onmouseout="outmouse1(this)">
+        <p>onmouseover</p>
+        <p id="demo3">Mouse Over Me!</p>
+    </div>
+    <script>
+        function onmouse(x){
+            x.style.color="black";
+        }
+        function outmouse(x){
+            x.style.color="red";
+        }
+        function onmouse1(x){
+            x.style.background="blue";
+        }
+        function outmouse2(x){
+            x.style.background="lightgray";
+        }
+        function onmouseover1(x) {
+            x.style.height = "200px";
+            x.style.width = "280px";
+        }
+        function outmouse1(x) {
+            x.style.height = "270px";
+            x.style.width = "380px";
+        }
+
+        let x=0;
+        let y=0;
+        let z=0;
+
+        function myMoveFunction() {
+            document.getElementById("demo1").innerHTML = z+=1;
+}
+
+        function myEnterFunction() {
+            document.getElementById("demo2").innerHTML = x+=1;
+        }
+        function showAlert(){
+            alert("This is an alert message!")
+        }
+    </script>
+</body>
+</html>
